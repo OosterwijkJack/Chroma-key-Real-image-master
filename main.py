@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 Program replaces background of image based on chroma key and tolerance
 (With example images chrome key [0,255,0] and tolerance 200 seems to work pretty well)
 
+Author: Jack Oosterwijk
+
 """
 
 class Vec3:  #  vector 3 class (used to handle colors nicely)
