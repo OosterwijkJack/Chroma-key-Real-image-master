@@ -40,7 +40,7 @@ def get_image():
     bg = Image.open(r"Image/background.jpeg")
 
     # resize background to match foreground
-    bg = bg.resize((fg.width, fg.height), Image.Resampling.LANCZOS)
+    bg = bg.resize((fg.width, fg.height), Image.ANTIALIAS)
     return copy(asarray(fg)), copy(asarray(bg)) # return copy so array is writeable
 
 def is_tolerant(chroma: Vec3, color: Vec3, tolerance):  # check of color is tolerated based on chroma and tolerance level
